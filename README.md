@@ -76,8 +76,8 @@ npx task <command> [options]
 | ------------------------------ | ----------------------------------- |
 | `list`                         | List all tasks                      |
 | `get <id>`                     | Get a task by its ID                |
-| `add <title>`                  | Add a new task with the given title |
-| `update <id> [title] [status]` | Update a task's title or status     |
+| `add `                  | Add a new task with the given title |
+| `update <id>  [status]` | Update a task's title or status     |
 | `delete <id>`                  | Delete a task by ID                 |
 
 ---
@@ -86,9 +86,9 @@ npx task <command> [options]
 
 ```bash
 npx task list
-npx task add "Learn Node.js"
+npx task add 
 npx task get 1694388775123
-npx task update 1694388775123 "New Task Title" done
+npx task update 1694388775123  done
 npx task delete 1694388775123
 ```
 
@@ -118,3 +118,4 @@ task-manager/
 * Node.js **v18+** is recommended for ES module support (`import/export`).
 * You can run the CLI using `npx task` without global installation.
 * if you want you can install cli.js to global than you can use command anywhere on your pc 
+
